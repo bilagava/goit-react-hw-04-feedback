@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 5px dotted brown;
+  width: 338px;
+  height: 310px;
+}
