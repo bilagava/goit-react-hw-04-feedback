@@ -6,23 +6,23 @@ import Notification from 'components/Notification';
 import styles from './style.module.css';
 
 function App() {
-  const [good, SetGood] = useState(0);
-  const [neutral, SetNeutral] = useState(0);
-  const [bad, SetBad] = useState(0);
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
 
   const feedbackTypes = { good, neutral, bad };
 
   const leaveFeedback = name => {
     switch (name) {
       case 'good':
-        SetGood(prevState => prevState + 1);
+        setGood(prevState => prevState + 1);
         break;
 
       case 'neutral':
-        SetNeutral(prevState => prevState + 1);
+        setNeutral(prevState => prevState + 1);
         break;
       case 'bad':
-        SetBad(prevState => prevState + 1);
+        setBad(prevState => prevState + 1);
         break;
 
       default:
