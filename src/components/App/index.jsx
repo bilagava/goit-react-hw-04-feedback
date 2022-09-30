@@ -5,7 +5,7 @@ import Statistics from 'components/Statistics';
 import Notification from 'components/Notification';
 import styles from './style.module.css';
 
-function App() {
+const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -59,6 +59,6 @@ function App() {
       </Section>
     </div>
   );
-}
+};
 
 export default App;
